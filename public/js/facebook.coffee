@@ -1,34 +1,5 @@
-#window.fbAsyncInit = ->
-#
-#    FB.init
-#        appId: "752382298105595"
-#        status: true
-#        cookie: true
-#        xfbml: true
-#
-#    FB.Event.subscribe "auth.authResponseChange", (response) ->
-#        if response.status is "connected"
-#            testAPI()
-#        else
-#            FB.login()
-#
-#(() ->
-#
-#    script = $('<script></script>')
-#        .attr
-#            id: "facebook-jssdk"
-#            async: true
-#            src: "//connect.facebook.net/en_US/all.js"
-#
-#    $('script').eq(0).before(script)
-#)()
-#
-#testAPI = ->
-##    console.log "Welcome!    Fetching your information.... "
-##    FB.api "/me", (response) ->
-##        console.log "Good to see you, " + response.name + ".", response
-##        $('body').append("<img src='http://graph.facebook.com/#{response.id}/picture?type=large'>")
-
+# Looking for people's photos by emails
+# using Gravatar, Facebook and Google+ APIs
 
 
 getPhotoByEmail = (email, callback) ->
